@@ -107,7 +107,7 @@ function GroupChooser({ images, setResult }: { images: string[]; setResult(s: st
 	return (
 		<div class="w-full flex flex-col gap-4">
 			<span class="text-5xl">
-				Which groups your cats are?
+				Which Box your cat are?
 			</span>
 			<span>
 				*click the box
