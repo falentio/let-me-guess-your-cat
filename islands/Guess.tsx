@@ -64,7 +64,7 @@ function ImagePicker(props: { setImages(images: string[]): void }) {
 			<span>
 				*Please memorize 1 of them, and then click Ok button
 			</span>
-			<div class="grid grid-cols-3 md:grid-cols-7 gap-3 w-max mx-auto">
+			<div class="grid grid-cols-4 md:grid-cols-7 gap-3 w-max mx-auto">
 				{images.map((i) => (
 					<div class="w-24 h-24">
 						<img
