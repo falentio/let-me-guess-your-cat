@@ -45,7 +45,8 @@ export class Guess<T> {
 	// return if ready to guess
 	answer(index: number): null | T {
 		if (++this.#guessCount === 3) {
-			return this.#current[index][3];
+			const mid = this.#current[index].length / 2 | 0
+			return this.#current[index][mid];
 		}
 		// swap to mid
 		[this.#current[1], this.#current[index]] = [this.#current[index], this.#current[1]];
@@ -56,8 +57,8 @@ export class Guess<T> {
 
 	// set items
 	setItems(items: T[]) {
-		if (items.length !== 21) {
-			throw new GuessError("invalid items length, items length must be 21");
+		if (items.length > 27) {
+			throw new GuessError("invalid items length, items length must bellow 28");
 		}
 		this.#items = items;
 		this.reset();

@@ -50,7 +50,7 @@ export default function GuessComponent(props: GuessProps) {
 function ImagePicker(props: { setImages(images: string[]): void }) {
 	const [images, setImages] = useState<string[]>([]);
 	const randomImages = () => {
-		setImages(Array.from({ length: 21 }).map(() => Math.random().toString(36).slice(-10)));
+		setImages(Array.from({ length: 27 }).map(() => Math.random().toString(36).slice(-10)));
 	};
 	useEffect(() => {
 		randomImages();
