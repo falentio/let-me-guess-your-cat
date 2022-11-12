@@ -20,7 +20,7 @@ export default function GuessComponent(props: GuessProps) {
 
 			{result && (
 				<div class="mx-auto flex flex-col items-center gap-4">
-					<span class="text-5xl">Here is your cats sir</span>
+					<span class="text-5xl">Here is your cat sir</span>
 					<span>
 						Pardon me if it incorrect, I will incorrectly guess your cats when you got
 						lie in one of 3 previous questions.
