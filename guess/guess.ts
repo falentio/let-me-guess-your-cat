@@ -1,4 +1,4 @@
-type GuessTuple<T> = [T[], T[], T[]];
+export type GuessTuple<T> = [T[], T[], T[]];
 
 export class GuessError extends Error {}
 
@@ -64,7 +64,7 @@ export class Guess<T> {
 	}
 
 	getItems(): T[] {
-		return Array(this.#items);
+		return Array.from(this.#items);
 	}
 }
 
