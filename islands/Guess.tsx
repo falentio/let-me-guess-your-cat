@@ -23,7 +23,7 @@ export default function GuessComponent(props: GuessProps) {
 					<span class="text-5xl">Here is your cats sir</span>
 					<span>
 						Pardon me if it incorrect, I will incorrectly guess your cats when you got
-						lie in one off 3 previous questions.
+						lie in one of 3 previous questions.
 					</span>
 					<div class="h-36 w-36">
 						<img
@@ -62,7 +62,7 @@ function ImagePicker(props: { setImages(images: string[]): void }) {
 				Setup your cats lineup
 			</span>
 			<span>
-				*Please memorize 1 of them
+				*Please memorize 1 of them, and then click Ok button
 			</span>
 			<div class="grid grid-cols-3 md:grid-cols-7 gap-3 w-max mx-auto">
 				{images.map((i) => (
